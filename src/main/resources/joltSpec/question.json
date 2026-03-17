@@ -1,0 +1,53 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "questions": {
+        "*": {
+          "id": "[&1].questionId",
+          "question": "[&1].questionText",
+          "answer": "[&1].correctAnswer",
+          "explanation": "[&1].answerExplanation",
+          "options": {
+            "*": {
+              "@": "[&3].options[&1].optText",
+              "@(2,answer)": "[&3].options[&1].__answer"
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "default",
+    "spec": {
+      "*": {
+        "questionType": "MCQ"
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "*": {
+        "options": {
+          "*": {
+            "correct": "False"
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "remove",
+    "spec": {
+      "*": {
+        "options": {
+          "*": {
+            "__answer": ""
+          }
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: Qurious
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+    properties:
+      jakarta.persistence.schema-generation.scripts.action: create
+      jakarta.persistence.schema-generation.scripts.create-target: qurious_schema.sql
+      jakarta.persistence.schema-generation.create-source: metadata
+      jakarta.persistence.schema-generation.scripts.create-target-append: false
+      hibernate:
+        jdbc:
+          time_zone: Asia/Kolkata
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DB_CONNECTION_URL}
+    username: idle
+    password: idle
+  ai:
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        project-id: ${GCP_PROJECT_ID}
+        chat:
+          options:
+            model: gemini-3-flash-preview
+#    openai:
+#      api-key: ${OPENAI_API_KEY}
+#      chat:
+#        options:
+#          model: gpt-4o-mini
+jwt:
+  secret: ${JWT_SECRET}
+
+server:
+  servlet:
+    context-path: /qurious
+  port: 8080
+
+
+

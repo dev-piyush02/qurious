@@ -1,0 +1,27 @@
+ALTER TABLE IF EXISTS ai_quiz_gen_log DROP CONSTRAINT IF EXISTS fkey_quiz_tbl;
+ALTER TABLE IF EXISTS answer_option DROP CONSTRAINT IF EXISTS fkey_quiz_question_tbl;
+ALTER TABLE IF EXISTS answer_submission DROP CONSTRAINT IF EXISTS quiz_participants_fkey;
+ALTER TABLE IF EXISTS answer_submission DROP CONSTRAINT IF EXISTS fkey_quiz_question_tbl;
+ALTER TABLE IF EXISTS answer_submission DROP CONSTRAINT IF EXISTS fkey_quiz_room_tbl;
+ALTER TABLE IF EXISTS quiz DROP CONSTRAINT IF EXISTS fkey_user_tbl;
+ALTER TABLE IF EXISTS quiz_attempt DROP CONSTRAINT IF EXISTS fkey_quiz_tbl;
+ALTER TABLE IF EXISTS quiz_attempt DROP CONSTRAINT IF EXISTS fkey_quiz_room_tbl;
+ALTER TABLE IF EXISTS quiz_attempt DROP CONSTRAINT IF EXISTS quiz_attempt_fkey;
+ALTER TABLE IF EXISTS quiz_participants DROP CONSTRAINT IF EXISTS fkey_user_tbl;
+ALTER TABLE IF EXISTS quiz_participants DROP CONSTRAINT IF EXISTS fkey_quiz_room_tbl;
+ALTER TABLE IF EXISTS quiz_questions DROP CONSTRAINT IF EXISTS fkey_quiz_tbl;
+ALTER TABLE IF EXISTS quiz_room DROP CONSTRAINT IF EXISTS fkey_quiz_tbl;
+ALTER TABLE IF EXISTS quiz_room DROP CONSTRAINT IF EXISTS fkey_user_tbl;
+ALTER TABLE IF EXISTS scores DROP CONSTRAINT IF EXISTS fkey_user_tbl;
+ALTER TABLE IF EXISTS scores DROP CONSTRAINT IF EXISTS fkey_quiz_room_tbl;
+
+DROP TABLE IF EXISTS scores;
+DROP TABLE IF EXISTS answer_submission;
+DROP TABLE IF EXISTS answer_option;
+DROP TABLE IF EXISTS quiz_attempt;
+DROP TABLE IF EXISTS quiz_participants;
+DROP TABLE IF EXISTS ai_quiz_gen_log;
+DROP TABLE IF EXISTS quiz_questions;
+DROP TABLE IF EXISTS quiz_room;
+DROP TABLE IF EXISTS quiz;
+DROP TABLE IF EXISTS users;
