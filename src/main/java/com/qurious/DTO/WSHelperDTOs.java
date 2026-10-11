@@ -7,8 +7,7 @@ import java.util.List;
 public class WSHelperDTOs {
     private WSHelperDTOs() {}
 
-    public record AnswerRequest(@NotBlank String questionId, @NotBlank String optionId) {}
     public record SkipRequest(@NotBlank String questionId) {}
-    public record QuizFinishedDto(String quizId, int answered, int skipped) {}
+    public record QuizFinishedDto(Long quizId, int answered, int skipped, int score) {}
     public record ErrorDto(String code, String message) {}
 }

@@ -65,7 +65,6 @@ public class QuizSessionService {
     }
     //Submit the answer
     public boolean submitAnswer(String quizRoomId, Long quizId, String userId, Long questionId, Long optionId){
-        //quizAttempt se current question fetch kr lena and ALSO increment it by 1
         QuizAttempt quizAttempt = attemptRepo.findByUser_UserIdAndQuiz_QuizId(userId, quizId);
         QuizRoom quizRoom = quizRoomRepo.findById(quizRoomId).get();
         User participant = userRepo.findById(userId).get();
@@ -88,20 +87,29 @@ public class QuizSessionService {
         return false;
     }
     //skip answering the question
-    public boolean skip(String QuizRoomId, Long quizId, String userId, String questionId){
-        //quizAttempt se current question fetch kr lena and ALSO increment it by 1
-
+    public boolean skip(String quizRoomId, Long quizId, String userId, String questionId){
+        QuizAttempt quizAttempt = attemptRepo.findByUser_UserIdAndQuiz_QuizId(userId, quizId);
+        if(quizAttempt.getStatus().equals(QuizAttemptStatus.IN_PROGRESS) && quizAttempt.getQuizRoom().getRoomId().equals(quizRoomId)){
+            quizAttempt.setSeenQuesCnt(quizAttempt.getSeenQuesCnt() + 1);
+            attemptRepo.save(quizAttempt);
+            return true;
+        }
         return false;
     }
     //Get the next question (called by each WS controller)
-    public Optional<QuestionDTO> nextQuestion(String QuizRoomId, Long quizId, String userId){
+    public Optional<QuestionDTO> nextQuestion(String quizRoomId, Long quizId, String userId){
         int cnt= attemptRepo.findSeenQuesCnt(userId, quizId);
         QuizQuestion ques= questionRepo.findQuestionAtOffset(quizId, cnt).get();
         if(ques.getQuestionId()!=null) {
             return Optional.ofNullable(manualMappers.mapQuestionToQuestionDTO(ques));
         }
-        return null;
+        return Optional.empty();
     }
-    public Optional<QuestionDTO> currentQuestion(String QuizRoomId, Long quizId, String userId){return null;} // no advance, for resume
-    public QuizFinishedDto summary(String QuizRoomId, Long quizId, String userId){return null;}
+    public QuizFinishedDto summary(String quizRoomId, Long quizId, String userId){
+        int seenQuesCnt = attemptRepo.findSeenQuesCnt(userId, quizId);
+        Quiz quiz = quizRepo.findById(quizId).get();
+        int skippedQuesCnt= quiz.getTotalQuestions()-seenQuesCnt;
+        return new QuizFinishedDto(quizId, skippedQuesCnt, (quiz.getTotalQuestions()-skippedQuesCnt),
+                (quiz.getTotalQuestions()-skippedQuesCnt));
+    }
 }
