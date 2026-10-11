@@ -1,7 +1,7 @@
-package com.qurious.qurious.mappers;
+package com.qurious.mappers;
 
-import com.qurious.qurious.DTO.AnswerOptionDTO;
-import com.qurious.qurious.entity.AnswerOption;
+import com.qurious.DTO.AnswerOptionDTO;
+import com.qurious.entity.AnswerOption;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

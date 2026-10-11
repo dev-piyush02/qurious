@@ -1,9 +1,9 @@
-package com.qurious.qurious.service;
+package com.qurious.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.qurious.qurious.entity.AIGenLog;
-import com.qurious.qurious.utils.JsonHelper;
+import com.qurious.entity.AIGenLog;
+import com.qurious.utils.JsonHelper;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.qurious.qurious.utils;
+package com.qurious.utils;
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.qurious.qurious.entity;
+package com.qurious.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;

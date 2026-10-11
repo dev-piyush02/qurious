@@ -1,4 +1,4 @@
-package com.qurious.qurious.entity;
+package com.qurious.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -44,5 +44,5 @@ public class AnswerSubmission {
     private String selectedAnswer;
     private boolean isCorrect;
     private Timestamp submittedAt;
-    private Long responseTimeMS;
+    private Long quizId;
 }

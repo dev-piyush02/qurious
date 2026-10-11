@@ -1,9 +1,10 @@
-package com.qurious.qurious.entity;
+package com.qurious.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.qurious.qurious.enums.Roles;
-import com.qurious.qurious.enums.Roles;
+import com.qurious.enums.Roles;
+import com.qurious.enums.Roles;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -29,5 +30,6 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
+    @JsonIgnore(value = true)
     private Roles userRole;
 }

@@ -1,15 +1,8 @@
-package com.qurious.qurious.controller;
+package com.qurious.controller;
 
-import com.qurious.qurious.DTO.QuizRoomDTO;
-import com.qurious.qurious.DTO.QuizRoomReqDTO;
-import com.qurious.qurious.entity.Quiz;
-import com.qurious.qurious.entity.QuizRoom;
-import com.qurious.qurious.entity.User;
-import com.qurious.qurious.repository.QuizRepo;
-import com.qurious.qurious.repository.QuizRoomRepo;
-import com.qurious.qurious.service.QuizRoomService;
-import com.qurious.qurious.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.qurious.DTO.QuizRoomDTO;
+import com.qurious.DTO.QuizRoomReqDTO;
+import com.qurious.service.QuizRoomService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
@@ -29,7 +22,7 @@ public class QuizRoomController {
     }
 
     // To create a quiz room
-    @PostMapping("create-room")
+    @PostMapping("/create-room")
     public ResponseEntity<?> createQuizRoom(@RequestParam Long quizId) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String userId = authentication.getName();
@@ -41,7 +34,7 @@ public class QuizRoomController {
         }
     }
     // To find quiz room by quizRoomCode or quizRoomId
-    @PostMapping("/find-quiz-room")
+    @GetMapping("/find-quiz-room")
     public ResponseEntity<?> findQuizRoom(@RequestBody QuizRoomReqDTO quizRoomReqDTO) {
         QuizRoomDTO quizRoom = quizRoomService.findQuizRoom(quizRoomReqDTO);
         if(quizRoom.getRoomId()!=null){

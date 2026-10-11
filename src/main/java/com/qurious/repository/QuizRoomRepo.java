@@ -1,6 +1,6 @@
-package com.qurious.qurious.repository;
+package com.qurious.repository;
 
-import com.qurious.qurious.entity.QuizRoom;
+import com.qurious.entity.QuizRoom;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

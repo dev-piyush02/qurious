@@ -1,16 +1,16 @@
-package com.qurious.qurious.controller;
+package com.qurious.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.api.client.json.Json;
-import com.qurious.qurious.DTO.QuizDTO;
-import com.qurious.qurious.DTO.ResultDTO;
-import com.qurious.qurious.entity.AIPrompt;
-import com.qurious.qurious.entity.Quiz;
-import com.qurious.qurious.entity.User;
-import com.qurious.qurious.repository.QuizRepo;
-import com.qurious.qurious.repository.UserRepo;
-import com.qurious.qurious.service.*;
+import com.qurious.DTO.QuizDTO;
+import com.qurious.DTO.ResultDTO;
+import com.qurious.entity.AIPrompt;
+import com.qurious.entity.Quiz;
+import com.qurious.entity.User;
+import com.qurious.repository.QuizRepo;
+import com.qurious.repository.UserRepo;
+import com.qurious.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -125,7 +125,7 @@ public class QuizController {
     }
 
     // To start the quiz
-    @PostMapping("/attempt/{quizId}/start")//participant ka check lagana hai if joined room or not
+    @PostMapping("/attempt/{quizId}/start")
     public ResponseEntity<?> startQuiz(@PathVariable Long quizId, @RequestParam String quizRoomId) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String userId = authentication.getName();

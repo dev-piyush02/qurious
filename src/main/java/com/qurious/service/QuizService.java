@@ -1,13 +1,14 @@
-package com.qurious.qurious.service;
+package com.qurious.service;
 
-import com.qurious.qurious.DTO.AnswerOptionDTO;
-import com.qurious.qurious.DTO.QuestionDTO;
-import com.qurious.qurious.DTO.QuizDTO;
-import com.qurious.qurious.DTO.ResultDTO;
-import com.qurious.qurious.entity.*;
-import com.qurious.qurious.enums.QuizAttemptStatus;
-import com.qurious.qurious.mappers.QuizMapper;
-import com.qurious.qurious.repository.*;
+import com.qurious.DTO.AnswerOptionDTO;
+import com.qurious.DTO.QuestionDTO;
+import com.qurious.DTO.QuizDTO;
+import com.qurious.DTO.ResultDTO;
+import com.qurious.entity.*;
+import com.qurious.enums.QuizAttemptStatus;
+import com.qurious.mappers.QuizMapper;
+import com.qurious.repository.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,6 +18,7 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 @Service
 public class QuizService {
     private final QuizRepo quizRepo;
@@ -114,16 +116,22 @@ public class QuizService {
         Quiz quiz = quizRepo.findById(quizId).get();
         QuizRoom quizRoom= quizRoomRepo.findById(quizRoomId).get();
         User participant= userRepo.findById(userId).get();
-        if(quizParticipantRepo.findByParticipant_UserIdAndQuizRoom_RoomId(userId, quizRoomId)!=null) {
-            QuizAttempt quizAttempt = new QuizAttempt();
-            quizAttempt.setQuiz(quiz);
-            quizAttempt.setQuizRoom(quizRoom);
-            quizAttempt.setUser(participant);
-            quizAttempt.setStartedAt(Timestamp.from(Instant.now()));
-            quizAttempt.setStatus(QuizAttemptStatus.IN_PROGRESS);
-            QuizAttempt attempt = attemptRepo.save(quizAttempt);
-            return attempt.getAttemptId();
+        //Validations for quiz
+        if(quiz.getStatus().equals("ACTIVE") && quizRoom.getRoomStatus().equals("ACTIVE")) {
+            if (quizParticipantRepo.findByParticipant_UserIdAndQuizRoom_RoomId(userId, quizRoomId) != null) {
+                QuizAttempt quizAttempt = new QuizAttempt();
+                quizAttempt.setQuiz(quiz);
+                quizAttempt.setQuizRoom(quizRoom);
+                quizAttempt.setUser(participant);
+                quizAttempt.setSeenQuesCnt(0);
+                quizAttempt.setStatus(QuizAttemptStatus.IN_PROGRESS);
+                QuizAttempt attempt = attemptRepo.save(quizAttempt);
+                log.debug("User {} started the quiz {}.",userId, quiz.getQuizId());
+                return attempt.getAttemptId();
+            }
+            log.error("User {} has already attempted the quiz {} earlier.",userId, quiz.getQuizId());
         }
+        log.error("User {} couldn't start the quiz {} as the quiz is not active.",userId, quiz.getQuizId());
         return null;
     }
 

@@ -1,6 +1,6 @@
-package com.qurious.qurious.repository;
+package com.qurious.repository;
 
-import com.qurious.qurious.entity.AnswerSubmission;
+import com.qurious.entity.AnswerSubmission;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

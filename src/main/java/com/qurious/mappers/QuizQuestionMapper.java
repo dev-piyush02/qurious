@@ -1,7 +1,7 @@
-package com.qurious.qurious.mappers;
+package com.qurious.mappers;
 
-import com.qurious.qurious.DTO.QuestionDTO;
-import com.qurious.qurious.entity.QuizQuestion;
+import com.qurious.DTO.QuestionDTO;
+import com.qurious.entity.QuizQuestion;
 import org.mapstruct.Mapper;
 
 import java.util.List;

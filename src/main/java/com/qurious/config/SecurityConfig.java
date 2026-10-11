@@ -1,8 +1,6 @@
-package com.qurious.qurious.config;
+package com.qurious.config;
 
-import com.qurious.qurious.filter.JwtFilter;
-import com.qurious.qurious.service.UserDetailServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.idleauth.jwthelper.JwtAuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -22,14 +20,12 @@ import java.util.Arrays;
 
 @Configuration
 @EnableWebSecurity
-public class SpringSecurity {
-    @Autowired
-    private UserDetailServiceImpl userDetailServiceImpl;
-    @Autowired
-    private JwtFilter jwtFilter;
+public class SecurityConfig {
 
-    public SpringSecurity(UserDetailServiceImpl userDetailServiceImpl) {
-        this.userDetailServiceImpl = userDetailServiceImpl;
+    private final JwtAuthenticationFilter jwtFilter;
+
+    public SecurityConfig(JwtAuthenticationFilter idleAuthJwtFilter) {
+        this.jwtFilter = idleAuthJwtFilter;
     }
 
     @Bean
@@ -68,5 +64,4 @@ public class SpringSecurity {
     public AuthenticationManager authenticationManager(AuthenticationConfiguration auth) throws Exception {
         return auth.getAuthenticationManager();
     }
-
 }

@@ -1,0 +1,424 @@
+2026-10-10T06:03:43.275+05:30  INFO 18980 --- [Qurious] [main] com.qurious.QuriousApplication           : Starting QuriousApplication using Java 21.0.5 with PID 18980 (C:\Users\mailp\Desktop\codes\springBoot\qurious\target\classes started by mailp in C:\Users\mailp\Desktop\codes\springBoot\qurious)
+2026-10-10T06:03:43.282+05:30 DEBUG 18980 --- [Qurious] [main] com.qurious.QuriousApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-10T06:03:43.283+05:30  INFO 18980 --- [Qurious] [main] com.qurious.QuriousApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T06:03:44.477+05:30  INFO 18980 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-10T06:03:44.651+05:30  INFO 18980 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 161 ms. Found 9 JPA repository interfaces.
+2026-10-10T06:03:45.266+05:30  INFO 18980 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-10T06:03:45.279+05:30  INFO 18980 --- [Qurious] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-10T06:03:45.279+05:30  INFO 18980 --- [Qurious] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-10T06:03:45.331+05:30  INFO 18980 --- [Qurious] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1994 ms
+2026-10-10T06:03:45.610+05:30  INFO 18980 --- [Qurious] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-10T06:03:45.678+05:30  INFO 18980 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-10T06:03:46.176+05:30  INFO 18980 --- [Qurious] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-10T06:03:46.215+05:30  INFO 18980 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-10T06:03:46.381+05:30  INFO 18980 --- [Qurious] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8a7cd7c
+2026-10-10T06:03:46.384+05:30  INFO 18980 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-10T06:03:46.465+05:30  INFO 18980 --- [Qurious] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:3200/qrious_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: qrious_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-10T06:03:47.792+05:30  INFO 18980 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-10T06:03:47.826+05:30  INFO 18980 --- [Qurious] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T06:03:47.914+05:30  INFO 18980 --- [Qurious] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-10T06:03:48.226+05:30  INFO 18980 --- [Qurious] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImpl
+2026-10-10T06:03:48.845+05:30  WARN 18980 --- [Qurious] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-10T06:03:49.793+05:30  INFO 18980 --- [Qurious] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-10T06:03:49.875+05:30  INFO 18980 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-10-10T06:03:49.875+05:30  INFO 18980 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@462c68b3]]
+2026-10-10T06:03:49.876+05:30  INFO 18980 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-10-10T06:03:49.900+05:30  INFO 18980 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/qurious'
+2026-10-10T06:03:49.909+05:30  INFO 18980 --- [Qurious] [main] com.qurious.QuriousApplication           : Started QuriousApplication in 7.195 seconds (process running for 9.057)
+2026-10-10T06:03:49.917+05:30  WARN 18980 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-10T06:03:49.917+05:30  WARN 18980 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-10T06:03:50.619+05:30  INFO 18980 --- [Qurious] [RMI TCP Connection(3)-192.168.1.5] o.a.c.c.C.[.[localhost].[/qurious]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-10T06:03:50.620+05:30  INFO 18980 --- [Qurious] [RMI TCP Connection(3)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-10T06:03:50.623+05:30  INFO 18980 --- [Qurious] [RMI TCP Connection(3)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-10-10T06:04:08.240+05:30  INFO 18980 --- [Qurious] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-10T06:04:08.245+05:30  INFO 18980 --- [Qurious] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-10T06:04:08.247+05:30  INFO 18980 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-10-10T06:04:08.248+05:30  INFO 18980 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@462c68b3]]
+2026-10-10T06:04:08.248+05:30  INFO 18980 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-10-10T06:04:08.254+05:30  INFO 18980 --- [Qurious] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T06:04:08.256+05:30  INFO 18980 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-10T06:04:08.259+05:30  INFO 18980 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-10T06:56:06.727+05:30  INFO 23676 --- [Qurious] [main] com.qurious.QuriousApplication           : Starting QuriousApplication using Java 21.0.5 with PID 23676 (C:\Users\mailp\Desktop\codes\springBoot\qurious\target\classes started by mailp in C:\Users\mailp\Desktop\codes\springBoot\qurious)
+2026-10-10T06:56:06.729+05:30 DEBUG 23676 --- [Qurious] [main] com.qurious.QuriousApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-10T06:56:06.730+05:30  INFO 23676 --- [Qurious] [main] com.qurious.QuriousApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T06:56:07.731+05:30  INFO 23676 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-10T06:56:07.868+05:30  INFO 23676 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 9 JPA repository interfaces.
+2026-10-10T06:56:08.413+05:30  INFO 23676 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-10T06:56:08.424+05:30  INFO 23676 --- [Qurious] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-10T06:56:08.424+05:30  INFO 23676 --- [Qurious] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-10T06:56:08.469+05:30  INFO 23676 --- [Qurious] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1702 ms
+2026-10-10T06:56:08.718+05:30  INFO 23676 --- [Qurious] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-10T06:56:08.762+05:30  INFO 23676 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-10T06:56:09.182+05:30  INFO 23676 --- [Qurious] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-10T06:56:09.215+05:30  INFO 23676 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-10T06:56:09.347+05:30  INFO 23676 --- [Qurious] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@feab3ae
+2026-10-10T06:56:09.349+05:30  INFO 23676 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-10T06:56:09.418+05:30  INFO 23676 --- [Qurious] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:3200/qrious_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: qrious_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-10T06:56:10.487+05:30  INFO 23676 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-10T06:56:10.515+05:30  INFO 23676 --- [Qurious] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T06:56:10.583+05:30  INFO 23676 --- [Qurious] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-10T06:56:11.371+05:30  INFO 23676 --- [Qurious] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImpl
+2026-10-10T06:56:11.915+05:30  WARN 23676 --- [Qurious] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-10T06:56:12.764+05:30  INFO 23676 --- [Qurious] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-10T06:56:12.831+05:30  INFO 23676 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-10-10T06:56:12.831+05:30  INFO 23676 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@47742aae]]
+2026-10-10T06:56:12.833+05:30  INFO 23676 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-10-10T06:56:12.851+05:30  INFO 23676 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/qurious'
+2026-10-10T06:56:12.860+05:30  INFO 23676 --- [Qurious] [main] com.qurious.QuriousApplication           : Started QuriousApplication in 6.753 seconds (process running for 7.742)
+2026-10-10T06:56:12.866+05:30  WARN 23676 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-10T06:56:12.866+05:30  WARN 23676 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-10T06:56:13.183+05:30  INFO 23676 --- [Qurious] [RMI TCP Connection(6)-192.168.1.5] o.a.c.c.C.[.[localhost].[/qurious]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-10T06:56:13.184+05:30  INFO 23676 --- [Qurious] [RMI TCP Connection(6)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-10T06:56:13.186+05:30  INFO 23676 --- [Qurious] [RMI TCP Connection(6)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-10-10T06:57:12.815+05:30  INFO 23676 --- [Qurious] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[unknown], outboundChannel[unknown], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-10-10T06:57:46.535+05:30 DEBUG 23676 --- [Qurious] [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.user_id,u1_0.user_email,u1_0.user_name,u1_0.user_password,u1_0.user_role from users u1_0 where u1_0.user_id=?
+2026-10-10T06:57:47.098+05:30 DEBUG 23676 --- [Qurious] [http-nio-8080-exec-2] org.hibernate.SQL                        : select as1_0.session_id,as1_0.created_at,as1_0.device_id,as1_0.expires_at,as1_0.is_revoked,as1_0.refresh_token_hash,as1_0.user_id from auth_session as1_0 where as1_0.session_id=?
+2026-10-10T06:57:47.768+05:30 DEBUG 23676 --- [Qurious] [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into auth_session (created_at,device_id,expires_at,is_revoked,refresh_token_hash,user_id,session_id) values (?,?,?,?,?,?,?)
+2026-10-10T06:58:43.586+05:30 DEBUG 23676 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select q1_0.quiz_id,q1_0.created_by,q1_0.creation_time,q1_0.quiz_description,q1_0.quiz_difficulty,q1_0.quiz_title,q1_0.status,q1_0.time_duration,q1_0.total_questions from quiz q1_0 where q1_0.quiz_id=?
+2026-10-10T06:58:43.649+05:30 DEBUG 23676 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select u1_0.user_id,u1_0.user_email,u1_0.user_name,u1_0.user_password,u1_0.user_role from users u1_0 where u1_0.user_id=?
+2026-10-10T06:58:43.671+05:30 DEBUG 23676 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select q1_0.quiz_id,q1_0.question_id,q1_0.answer_explanation,q1_0.correct_answer,q1_0.question_text,q1_0.question_type from quiz_questions q1_0 where q1_0.quiz_id=?
+2026-10-10T06:58:43.720+05:30 DEBUG 23676 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select o1_0.question_id,o1_0.opt_id,o1_0.is_correct,o1_0.opt_text from answer_option o1_0 where o1_0.question_id=?
+2026-10-10T06:58:43.767+05:30 DEBUG 23676 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select o1_0.question_id,o1_0.opt_id,o1_0.is_correct,o1_0.opt_text from answer_option o1_0 where o1_0.question_id=?
+2026-10-10T06:58:43.790+05:30 DEBUG 23676 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select o1_0.question_id,o1_0.opt_id,o1_0.is_correct,o1_0.opt_text from answer_option o1_0 where o1_0.question_id=?
+2026-10-10T07:16:30.752+05:30  WARN 23676 --- [Qurious] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m20s898ms572µs900ns).
+2026-10-10T07:29:03.714+05:30  INFO 23676 --- [Qurious] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[unknown], outboundChannel[unknown], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2026-10-10T07:35:56.605+05:30  WARN 23676 --- [Qurious] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m25s456ms99µs100ns).
+2026-10-10T07:36:13.730+05:30  INFO 23676 --- [Qurious] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-10T07:36:13.736+05:30  INFO 23676 --- [Qurious] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-10T07:36:13.738+05:30  INFO 23676 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-10-10T07:36:13.738+05:30  INFO 23676 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@47742aae]]
+2026-10-10T07:36:13.738+05:30  INFO 23676 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-10-10T07:36:13.745+05:30  INFO 23676 --- [Qurious] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T07:36:13.746+05:30  INFO 23676 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-10T07:36:13.749+05:30  INFO 23676 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-10T07:42:48.624+05:30  INFO 23996 --- [Qurious] [main] com.qurious.QuriousApplication           : Starting QuriousApplication using Java 21.0.5 with PID 23996 (C:\Users\mailp\Desktop\codes\springBoot\qurious\target\classes started by mailp in C:\Users\mailp\Desktop\codes\springBoot\qurious)
+2026-10-10T07:42:48.627+05:30 DEBUG 23996 --- [Qurious] [main] com.qurious.QuriousApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-10T07:42:48.628+05:30  INFO 23996 --- [Qurious] [main] com.qurious.QuriousApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T07:42:49.608+05:30  INFO 23996 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-10T07:42:49.748+05:30  INFO 23996 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 9 JPA repository interfaces.
+2026-10-10T07:42:50.329+05:30  INFO 23996 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-10T07:42:50.342+05:30  INFO 23996 --- [Qurious] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-10T07:42:50.343+05:30  INFO 23996 --- [Qurious] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-10T07:42:50.396+05:30  INFO 23996 --- [Qurious] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1725 ms
+2026-10-10T07:42:50.661+05:30  INFO 23996 --- [Qurious] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-10T07:42:50.720+05:30  INFO 23996 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-10T07:42:51.185+05:30  INFO 23996 --- [Qurious] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-10T07:42:51.221+05:30  INFO 23996 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-10T07:42:51.369+05:30  INFO 23996 --- [Qurious] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@75559cd9
+2026-10-10T07:42:51.372+05:30  INFO 23996 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-10T07:42:51.449+05:30  INFO 23996 --- [Qurious] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:3200/qrious_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: qrious_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-10T07:42:52.614+05:30  INFO 23996 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-10T07:42:52.647+05:30  INFO 23996 --- [Qurious] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T07:42:52.724+05:30  INFO 23996 --- [Qurious] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-10T07:42:53.536+05:30  INFO 23996 --- [Qurious] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImpl
+2026-10-10T07:42:54.104+05:30  WARN 23996 --- [Qurious] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-10T07:42:54.992+05:30  INFO 23996 --- [Qurious] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-10T07:42:55.068+05:30  INFO 23996 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-10-10T07:42:55.069+05:30  INFO 23996 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@6e75a0a6]]
+2026-10-10T07:42:55.070+05:30  INFO 23996 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-10-10T07:42:55.088+05:30  INFO 23996 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/qurious'
+2026-10-10T07:42:55.097+05:30  INFO 23996 --- [Qurious] [main] com.qurious.QuriousApplication           : Started QuriousApplication in 6.99 seconds (process running for 8.035)
+2026-10-10T07:42:55.103+05:30  WARN 23996 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-10T07:42:55.104+05:30  WARN 23996 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-10T07:42:55.602+05:30  INFO 23996 --- [Qurious] [RMI TCP Connection(2)-192.168.1.5] o.a.c.c.C.[.[localhost].[/qurious]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-10T07:42:55.602+05:30  INFO 23996 --- [Qurious] [RMI TCP Connection(2)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-10T07:42:55.605+05:30  INFO 23996 --- [Qurious] [RMI TCP Connection(2)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-10-10T07:43:54.589+05:30 DEBUG 23996 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select * from quiz_question where quiz_id = ? order by question_id offset ? limit 1
+2026-10-10T07:43:54.607+05:30  WARN 23996 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 42P01
+2026-10-10T07:43:54.607+05:30  WARN 23996 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.error             : ERROR: relation "quiz_question" does not exist
+  Position: 15
+2026-10-10T07:43:55.049+05:30  INFO 23996 --- [Qurious] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[unknown], outboundChannel[unknown], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-10-10T07:45:45.969+05:30  INFO 23996 --- [Qurious] [http-nio-8080-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 820 ms
+2026-10-10T07:46:07.589+05:30 DEBUG 23996 --- [Qurious] [http-nio-8080-exec-8] org.hibernate.SQL                        : select * from quiz_question where quiz_id = ? order by question_id offset ? limit 1
+2026-10-10T07:46:07.591+05:30  WARN 23996 --- [Qurious] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 42P01
+2026-10-10T07:46:07.591+05:30  WARN 23996 --- [Qurious] [http-nio-8080-exec-8] org.hibernate.orm.jdbc.error             : ERROR: relation "quiz_question" does not exist
+  Position: 15
+2026-10-10T07:46:28.248+05:30 DEBUG 23996 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select * from quiz_question where quiz_id = ? order by question_id offset ? limit 1
+2026-10-10T07:46:28.250+05:30  WARN 23996 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 42P01
+2026-10-10T07:46:28.250+05:30  WARN 23996 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.error             : ERROR: relation "quiz_question" does not exist
+  Position: 15
+2026-10-10T07:47:34.599+05:30 DEBUG 23996 --- [Qurious] [http-nio-8080-exec-5] org.hibernate.SQL                        : select * from quiz_question where quiz_id = ? order by question_id offset ? limit 1
+2026-10-10T07:47:34.601+05:30  WARN 23996 --- [Qurious] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 42P01
+2026-10-10T07:47:34.602+05:30  WARN 23996 --- [Qurious] [http-nio-8080-exec-5] org.hibernate.orm.jdbc.error             : ERROR: relation "quiz_question" does not exist
+  Position: 15
+2026-10-10T07:47:41.759+05:30  INFO 23996 --- [Qurious] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-10T07:47:41.767+05:30  INFO 23996 --- [Qurious] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-10T07:47:41.770+05:30  INFO 23996 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-10-10T07:47:41.770+05:30  INFO 23996 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@6e75a0a6]]
+2026-10-10T07:47:41.770+05:30  INFO 23996 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-10-10T07:47:41.775+05:30  INFO 23996 --- [Qurious] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T07:47:41.778+05:30  INFO 23996 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-10T07:47:41.781+05:30  INFO 23996 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-10T07:47:49.601+05:30  INFO 16568 --- [Qurious] [main] com.qurious.QuriousApplication           : Starting QuriousApplication using Java 21.0.5 with PID 16568 (C:\Users\mailp\Desktop\codes\springBoot\qurious\target\classes started by mailp in C:\Users\mailp\Desktop\codes\springBoot\qurious)
+2026-10-10T07:47:49.604+05:30 DEBUG 16568 --- [Qurious] [main] com.qurious.QuriousApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-10T07:47:49.604+05:30  INFO 16568 --- [Qurious] [main] com.qurious.QuriousApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T07:47:50.601+05:30  INFO 16568 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-10T07:47:50.745+05:30  INFO 16568 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 9 JPA repository interfaces.
+2026-10-10T07:47:51.277+05:30  INFO 16568 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-10T07:47:51.288+05:30  INFO 16568 --- [Qurious] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-10T07:47:51.288+05:30  INFO 16568 --- [Qurious] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-10T07:47:51.335+05:30  INFO 16568 --- [Qurious] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1688 ms
+2026-10-10T07:47:51.583+05:30  INFO 16568 --- [Qurious] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-10T07:47:51.627+05:30  INFO 16568 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-10T07:47:52.059+05:30  INFO 16568 --- [Qurious] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-10T07:47:52.093+05:30  INFO 16568 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-10T07:47:52.232+05:30  INFO 16568 --- [Qurious] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@39a09c0
+2026-10-10T07:47:52.234+05:30  INFO 16568 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-10T07:47:52.308+05:30  INFO 16568 --- [Qurious] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:3200/qrious_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: qrious_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-10T07:47:53.444+05:30  INFO 16568 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-10T07:47:53.473+05:30  INFO 16568 --- [Qurious] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T07:47:53.545+05:30  INFO 16568 --- [Qurious] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-10T07:47:54.264+05:30  INFO 16568 --- [Qurious] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImpl
+2026-10-10T07:47:54.758+05:30  WARN 16568 --- [Qurious] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-10T07:47:55.671+05:30  INFO 16568 --- [Qurious] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-10T07:47:55.751+05:30  INFO 16568 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-10-10T07:47:55.752+05:30  INFO 16568 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3aee27e1]]
+2026-10-10T07:47:55.753+05:30  INFO 16568 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-10-10T07:47:55.777+05:30  INFO 16568 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/qurious'
+2026-10-10T07:47:55.786+05:30  INFO 16568 --- [Qurious] [main] com.qurious.QuriousApplication           : Started QuriousApplication in 6.719 seconds (process running for 7.606)
+2026-10-10T07:47:55.794+05:30  WARN 16568 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-10T07:47:55.794+05:30  WARN 16568 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-10T07:47:56.217+05:30  INFO 16568 --- [Qurious] [RMI TCP Connection(1)-192.168.1.5] o.a.c.c.C.[.[localhost].[/qurious]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-10T07:47:56.218+05:30  INFO 16568 --- [Qurious] [RMI TCP Connection(1)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-10T07:47:56.224+05:30  INFO 16568 --- [Qurious] [RMI TCP Connection(1)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-10-10T07:48:02.943+05:30 DEBUG 16568 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select qq from QuizQuestion qq where qq.quiz_id = ? order by qq.question_id offset ? limit 1
+2026-10-10T07:48:02.967+05:30  WARN 16568 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 42P01
+2026-10-10T07:48:02.967+05:30  WARN 16568 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.orm.jdbc.error             : ERROR: relation "quizquestion" does not exist
+  Position: 16
+2026-10-10T07:48:39.757+05:30  INFO 16568 --- [Qurious] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-10T07:48:39.767+05:30  INFO 16568 --- [Qurious] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-10T07:48:39.771+05:30  INFO 16568 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-10-10T07:48:39.771+05:30  INFO 16568 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@3aee27e1]]
+2026-10-10T07:48:39.772+05:30  INFO 16568 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-10-10T07:48:39.779+05:30  INFO 16568 --- [Qurious] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T07:48:39.782+05:30  INFO 16568 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-10T07:48:39.786+05:30  INFO 16568 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-10T07:50:10.564+05:30  INFO 9608 --- [Qurious] [main] com.qurious.QuriousApplication           : Starting QuriousApplication using Java 21.0.5 with PID 9608 (C:\Users\mailp\Desktop\codes\springBoot\qurious\target\classes started by mailp in C:\Users\mailp\Desktop\codes\springBoot\qurious)
+2026-10-10T07:50:10.566+05:30 DEBUG 9608 --- [Qurious] [main] com.qurious.QuriousApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-10T07:50:10.567+05:30  INFO 9608 --- [Qurious] [main] com.qurious.QuriousApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T07:50:11.491+05:30  INFO 9608 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-10T07:50:11.616+05:30  INFO 9608 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 9 JPA repository interfaces.
+2026-10-10T07:50:12.164+05:30  INFO 9608 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-10T07:50:12.176+05:30  INFO 9608 --- [Qurious] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-10T07:50:12.176+05:30  INFO 9608 --- [Qurious] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-10T07:50:12.220+05:30  INFO 9608 --- [Qurious] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1613 ms
+2026-10-10T07:50:12.449+05:30  INFO 9608 --- [Qurious] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-10T07:50:12.499+05:30  INFO 9608 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-10T07:50:12.928+05:30  INFO 9608 --- [Qurious] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-10T07:50:12.961+05:30  INFO 9608 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-10T07:50:13.094+05:30  INFO 9608 --- [Qurious] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3a225534
+2026-10-10T07:50:13.096+05:30  INFO 9608 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-10T07:50:13.156+05:30  INFO 9608 --- [Qurious] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:3200/qrious_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: qrious_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-10T07:50:14.202+05:30  INFO 9608 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-10T07:50:14.229+05:30  INFO 9608 --- [Qurious] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T07:50:14.294+05:30  INFO 9608 --- [Qurious] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-10T07:50:14.949+05:30  INFO 9608 --- [Qurious] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImpl
+2026-10-10T07:50:15.430+05:30  WARN 9608 --- [Qurious] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-10T07:50:16.237+05:30  INFO 9608 --- [Qurious] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-10T07:50:16.313+05:30  INFO 9608 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-10-10T07:50:16.314+05:30  INFO 9608 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2293d694]]
+2026-10-10T07:50:16.315+05:30  INFO 9608 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-10-10T07:50:16.332+05:30  INFO 9608 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/qurious'
+2026-10-10T07:50:16.339+05:30  INFO 9608 --- [Qurious] [main] com.qurious.QuriousApplication           : Started QuriousApplication in 6.236 seconds (process running for 7.041)
+2026-10-10T07:50:16.344+05:30  WARN 9608 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-10T07:50:16.345+05:30  WARN 9608 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-10T07:50:16.781+05:30  INFO 9608 --- [Qurious] [RMI TCP Connection(5)-192.168.1.5] o.a.c.c.C.[.[localhost].[/qurious]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-10T07:50:16.782+05:30  INFO 9608 --- [Qurious] [RMI TCP Connection(5)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-10T07:50:16.786+05:30  INFO 9608 --- [Qurious] [RMI TCP Connection(5)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-10-10T07:50:26.874+05:30 DEBUG 9608 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select * from quiz_questions qq where qq.quiz_id = ? order by qq.question_id offset ? limit 1
+2026-10-10T07:50:27.061+05:30 DEBUG 9608 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select o1_0.question_id,o1_0.opt_id,o1_0.is_correct,o1_0.opt_text from answer_option o1_0 where o1_0.question_id=?
+2026-10-10T07:51:16.283+05:30  INFO 9608 --- [Qurious] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[unknown], outboundChannel[unknown], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-10-10T07:53:24.387+05:30  INFO 9608 --- [Qurious] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-10T07:53:24.391+05:30  INFO 9608 --- [Qurious] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-10T07:53:24.394+05:30  INFO 9608 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-10-10T07:53:24.394+05:30  INFO 9608 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2293d694]]
+2026-10-10T07:53:24.394+05:30  INFO 9608 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-10-10T07:53:24.400+05:30  INFO 9608 --- [Qurious] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T07:53:24.403+05:30  INFO 9608 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-10T07:53:24.406+05:30  INFO 9608 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-10T07:53:28.261+05:30  INFO 19500 --- [Qurious] [main] com.qurious.QuriousApplication           : Starting QuriousApplication using Java 21.0.5 with PID 19500 (C:\Users\mailp\Desktop\codes\springBoot\qurious\target\classes started by mailp in C:\Users\mailp\Desktop\codes\springBoot\qurious)
+2026-10-10T07:53:28.264+05:30 DEBUG 19500 --- [Qurious] [main] com.qurious.QuriousApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-10T07:53:28.264+05:30  INFO 19500 --- [Qurious] [main] com.qurious.QuriousApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T07:53:29.178+05:30  INFO 19500 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-10T07:53:29.300+05:30  INFO 19500 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 9 JPA repository interfaces.
+2026-10-10T07:53:29.803+05:30  INFO 19500 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-10T07:53:29.814+05:30  INFO 19500 --- [Qurious] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-10T07:53:29.814+05:30  INFO 19500 --- [Qurious] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-10T07:53:29.858+05:30  INFO 19500 --- [Qurious] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1555 ms
+2026-10-10T07:53:30.073+05:30  INFO 19500 --- [Qurious] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-10T07:53:30.118+05:30  INFO 19500 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-10T07:53:30.523+05:30  INFO 19500 --- [Qurious] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-10T07:53:30.560+05:30  INFO 19500 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-10T07:53:30.681+05:30  INFO 19500 --- [Qurious] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@52b6561b
+2026-10-10T07:53:30.683+05:30  INFO 19500 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-10T07:53:30.744+05:30  INFO 19500 --- [Qurious] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:3200/qrious_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: qrious_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-10T07:53:31.792+05:30  INFO 19500 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-10T07:53:31.818+05:30  INFO 19500 --- [Qurious] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T07:53:31.883+05:30  INFO 19500 --- [Qurious] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-10T07:53:32.542+05:30  INFO 19500 --- [Qurious] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImpl
+2026-10-10T07:53:33.024+05:30  WARN 19500 --- [Qurious] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-10T07:53:33.783+05:30  INFO 19500 --- [Qurious] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-10T07:53:33.850+05:30  INFO 19500 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-10-10T07:53:33.851+05:30  INFO 19500 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@21e860cd]]
+2026-10-10T07:53:33.852+05:30  INFO 19500 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-10-10T07:53:33.869+05:30  INFO 19500 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/qurious'
+2026-10-10T07:53:33.875+05:30  INFO 19500 --- [Qurious] [main] com.qurious.QuriousApplication           : Started QuriousApplication in 6.059 seconds (process running for 6.863)
+2026-10-10T07:53:33.881+05:30  WARN 19500 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-10T07:53:33.881+05:30  WARN 19500 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-10T07:53:34.436+05:30  INFO 19500 --- [Qurious] [RMI TCP Connection(1)-192.168.1.5] o.a.c.c.C.[.[localhost].[/qurious]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-10T07:53:34.437+05:30  INFO 19500 --- [Qurious] [RMI TCP Connection(1)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-10T07:53:34.440+05:30  INFO 19500 --- [Qurious] [RMI TCP Connection(1)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-10-10T07:54:33.832+05:30  INFO 19500 --- [Qurious] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[unknown], outboundChannel[unknown], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-10-10T07:54:39.020+05:30 DEBUG 19500 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select * from quiz_questions qq where qq.quiz_id = ? order by qq.question_id offset ? limit 1
+2026-10-10T07:54:39.163+05:30 DEBUG 19500 --- [Qurious] [http-nio-8080-exec-1] org.hibernate.SQL                        : select o1_0.question_id,o1_0.opt_id,o1_0.is_correct,o1_0.opt_text from answer_option o1_0 where o1_0.question_id=?
+2026-10-10T07:54:57.984+05:30  INFO 19500 --- [Qurious] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-10T07:54:57.991+05:30  INFO 19500 --- [Qurious] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-10T07:54:57.996+05:30  INFO 19500 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-10-10T07:54:57.996+05:30  INFO 19500 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@21e860cd]]
+2026-10-10T07:54:57.996+05:30  INFO 19500 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-10-10T07:54:58.002+05:30  INFO 19500 --- [Qurious] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T07:54:58.003+05:30  INFO 19500 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-10T07:54:58.006+05:30  INFO 19500 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-10T08:12:57.933+05:30  INFO 18736 --- [Qurious] [main] com.qurious.QuriousApplication           : Starting QuriousApplication using Java 21.0.5 with PID 18736 (C:\Users\mailp\Desktop\codes\springBoot\qurious\target\classes started by mailp in C:\Users\mailp\Desktop\codes\springBoot\qurious)
+2026-10-10T08:12:57.936+05:30 DEBUG 18736 --- [Qurious] [main] com.qurious.QuriousApplication           : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-10-10T08:12:57.937+05:30  INFO 18736 --- [Qurious] [main] com.qurious.QuriousApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-10-10T08:12:58.910+05:30  INFO 18736 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-10T08:12:59.046+05:30  INFO 18736 --- [Qurious] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 9 JPA repository interfaces.
+2026-10-10T08:12:59.571+05:30  INFO 18736 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-10T08:12:59.581+05:30  INFO 18736 --- [Qurious] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-10T08:12:59.582+05:30  INFO 18736 --- [Qurious] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-10-10T08:12:59.626+05:30  INFO 18736 --- [Qurious] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1648 ms
+2026-10-10T08:12:59.869+05:30  INFO 18736 --- [Qurious] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-10T08:12:59.913+05:30  INFO 18736 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-10-10T08:13:00.351+05:30  INFO 18736 --- [Qurious] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-10T08:13:00.381+05:30  INFO 18736 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-10T08:13:00.509+05:30  INFO 18736 --- [Qurious] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@feab3ae
+2026-10-10T08:13:00.511+05:30  INFO 18736 --- [Qurious] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-10T08:13:00.575+05:30  INFO 18736 --- [Qurious] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:3200/qrious_db]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.11
+	Default catalog/schema: qrious_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-10T08:13:01.614+05:30  INFO 18736 --- [Qurious] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-10T08:13:01.640+05:30  INFO 18736 --- [Qurious] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T08:13:01.709+05:30  INFO 18736 --- [Qurious] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-10T08:13:02.399+05:30  INFO 18736 --- [Qurious] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailServiceImpl
+2026-10-10T08:13:02.902+05:30  WARN 18736 --- [Qurious] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-10T08:13:03.738+05:30  INFO 18736 --- [Qurious] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-10T08:13:03.808+05:30  INFO 18736 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-10-10T08:13:03.809+05:30  INFO 18736 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@47742aae]]
+2026-10-10T08:13:03.810+05:30  INFO 18736 --- [Qurious] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-10-10T08:13:03.829+05:30  INFO 18736 --- [Qurious] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/qurious'
+2026-10-10T08:13:03.838+05:30  INFO 18736 --- [Qurious] [main] com.qurious.QuriousApplication           : Started QuriousApplication in 6.437 seconds (process running for 7.561)
+2026-10-10T08:13:03.845+05:30  WARN 18736 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-10T08:13:03.846+05:30  WARN 18736 --- [Qurious] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-10T08:13:04.234+05:30  INFO 18736 --- [Qurious] [RMI TCP Connection(3)-192.168.1.5] o.a.c.c.C.[.[localhost].[/qurious]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-10T08:13:04.235+05:30  INFO 18736 --- [Qurious] [RMI TCP Connection(3)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-10T08:13:04.237+05:30  INFO 18736 --- [Qurious] [RMI TCP Connection(3)-192.168.1.5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-10-10T08:13:58.566+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.user_id,u1_0.user_email,u1_0.user_name,u1_0.user_password,u1_0.user_role from users u1_0 where u1_0.user_id=?
+2026-10-10T08:13:58.987+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-2] org.hibernate.SQL                        : select as1_0.session_id,as1_0.created_at,as1_0.device_id,as1_0.expires_at,as1_0.is_revoked,as1_0.refresh_token_hash,as1_0.user_id from auth_session as1_0 where as1_0.session_id=?
+2026-10-10T08:13:59.038+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into auth_session (created_at,device_id,expires_at,is_revoked,refresh_token_hash,user_id,session_id) values (?,?,?,?,?,?,?)
+2026-10-10T08:14:03.785+05:30  INFO 18736 --- [Qurious] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[unknown], outboundChannel[unknown], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-10-10T08:14:09.480+05:30  WARN 18736 --- [Qurious] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'quizRoomId' for method parameter type String is not present]
+2026-10-10T08:14:24.949+05:30  WARN 18736 --- [Qurious] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'quizRoomId' for method parameter type String is not present]
+2026-10-10T08:14:26.748+05:30  WARN 18736 --- [Qurious] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'quizRoomId' for method parameter type String is not present]
+2026-10-10T08:15:09.297+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-5] org.hibernate.SQL                        : select q1_0.quiz_id,q1_0.created_by,q1_0.creation_time,q1_0.quiz_description,q1_0.quiz_difficulty,q1_0.quiz_title,q1_0.status,q1_0.time_duration,q1_0.total_questions from quiz q1_0 where q1_0.quiz_id=?
+2026-10-10T08:15:09.339+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-5] org.hibernate.SQL                        : select qr1_0.room_id,qr1_0.created_at,qr1_0.quiz_id,qr1_0.room_host,qr1_0.room_code,qr1_0.room_status from quiz_room qr1_0 where qr1_0.room_id=?
+2026-10-10T08:15:09.348+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.user_id,u1_0.user_email,u1_0.user_name,u1_0.user_password,u1_0.user_role from users u1_0 where u1_0.user_id=?
+2026-10-10T08:15:09.559+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-5] org.hibernate.SQL                        : select qp1_0.id,qp1_0.is_completed,qp1_0.joined_at,qp1_0.participant_id,qp1_0.room_id from quiz_participants qp1_0 where qp1_0.participant_id=? and qp1_0.room_id=?
+2026-10-10T08:15:09.585+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-5] org.hibernate.SQL                        : insert into quiz_attempt (quiz_id,room_id,score,seen_ques_cnt,started_at,status,submitted_at,user_id) values (?,?,?,?,?,?,?,?)
+2026-10-10T08:15:09.635+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-5] com.qurious.service.QuizService          : User test started the quiz 10.
+2026-10-10T08:16:20.764+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-7] org.hibernate.SQL                        : select qa1_0.seen_ques_cnt from quiz_attempt qa1_0 where qa1_0.user_id=? and qa1_0.quiz_id=?
+2026-10-10T08:16:20.811+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-7] org.hibernate.SQL                        : select * from quiz_questions qq where qq.quiz_id = ? order by qq.question_id offset ? limit 1
+2026-10-10T08:16:20.828+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-7] org.hibernate.SQL                        : select o1_0.question_id,o1_0.opt_id,o1_0.is_correct,o1_0.opt_text from answer_option o1_0 where o1_0.question_id=?
+2026-10-10T08:16:24.759+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-8] org.hibernate.SQL                        : select qa1_0.seen_ques_cnt from quiz_attempt qa1_0 where qa1_0.user_id=? and qa1_0.quiz_id=?
+2026-10-10T08:16:24.762+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-8] org.hibernate.SQL                        : select * from quiz_questions qq where qq.quiz_id = ? order by qq.question_id offset ? limit 1
+2026-10-10T08:16:24.766+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-8] org.hibernate.SQL                        : select o1_0.question_id,o1_0.opt_id,o1_0.is_correct,o1_0.opt_text from answer_option o1_0 where o1_0.question_id=?
+2026-10-10T08:16:27.013+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-10] org.hibernate.SQL                        : select qa1_0.seen_ques_cnt from quiz_attempt qa1_0 where qa1_0.user_id=? and qa1_0.quiz_id=?
+2026-10-10T08:16:27.019+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-10] org.hibernate.SQL                        : select * from quiz_questions qq where qq.quiz_id = ? order by qq.question_id offset ? limit 1
+2026-10-10T08:16:27.023+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-10] org.hibernate.SQL                        : select o1_0.question_id,o1_0.opt_id,o1_0.is_correct,o1_0.opt_text from answer_option o1_0 where o1_0.question_id=?
+2026-10-10T08:16:29.136+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-9] org.hibernate.SQL                        : select qa1_0.seen_ques_cnt from quiz_attempt qa1_0 where qa1_0.user_id=? and qa1_0.quiz_id=?
+2026-10-10T08:16:29.139+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-9] org.hibernate.SQL                        : select * from quiz_questions qq where qq.quiz_id = ? order by qq.question_id offset ? limit 1
+2026-10-10T08:16:29.144+05:30 DEBUG 18736 --- [Qurious] [http-nio-8080-exec-9] org.hibernate.SQL                        : select o1_0.question_id,o1_0.opt_id,o1_0.is_correct,o1_0.opt_text from answer_option o1_0 where o1_0.question_id=?
+2026-10-10T08:37:58.622+05:30  WARN 18736 --- [Qurious] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m27s710ms686µs300ns).
+2026-10-10T08:38:10.839+05:30  INFO 18736 --- [Qurious] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-10T08:38:10.844+05:30  INFO 18736 --- [Qurious] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-10T08:38:10.845+05:30  INFO 18736 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-10-10T08:38:10.846+05:30  INFO 18736 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@47742aae]]
+2026-10-10T08:38:10.846+05:30  INFO 18736 --- [Qurious] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-10-10T08:38:10.851+05:30  INFO 18736 --- [Qurious] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-10T08:38:10.853+05:30  INFO 18736 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-10T08:38:10.855+05:30  INFO 18736 --- [Qurious] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

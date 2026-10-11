@@ -1,10 +1,10 @@
-package com.qurious.qurious.service;
+package com.qurious.service;
 
-import com.qurious.qurious.DTO.UserDTO;
-import com.qurious.qurious.entity.User;
-import com.qurious.qurious.enums.Roles;
-import com.qurious.qurious.mappers.UserMapper;
-import com.qurious.qurious.repository.UserRepo;
+import com.qurious.DTO.UserDTO;
+import com.qurious.entity.User;
+import com.qurious.enums.Roles;
+import com.qurious.mappers.UserMapper;
+import com.qurious.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -63,5 +63,9 @@ public class UserService {
             return true;
         }
         return false;
+    }
+
+    public User loadUserById(String id){
+        return userRepo.findById(id).get();
     }
 }

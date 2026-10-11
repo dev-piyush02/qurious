@@ -27,19 +27,38 @@ spring:
         project-id: ${GCP_PROJECT_ID}
         chat:
           options:
-            model: gemini-3-flash-preview
+            model: gemini-3.5-flash-lite
 #    openai:
 #      api-key: ${OPENAI_API_KEY}
 #      chat:
 #        options:
 #          model: gpt-4o-mini
-jwt:
-  secret: ${JWT_SECRET}
-
+logging:
+  level:
+    root: INFO
+    com.qurious: DEBUG          # your base package
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG        # if using JPA
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] [%X{correlationId:-}] %logger{36} - %msg%n"
+  file:
+    name: logs/app.log
+  logback:
+    rollingpolicy:
+      max-file-size: 50MB
+      max-history: 14
+      total-size-cap: 2GB
 server:
   servlet:
     context-path: /qurious
   port: 8080
 
+idleauth:
+  enabled: true
+  secret: ${JWT_SECRET}
+  access-expiry: ${JWT_SECRET_EXPIRY}
+  refresh-expiry: ${REFRESH_EXPIRY}
 
-
+qurious:
+  ws:
+    allowed-origins: http://localhost:3000

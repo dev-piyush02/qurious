@@ -1,4 +1,4 @@
-package com.qurious.qurious.DTO;
+package com.qurious.DTO;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import lombok.Data;

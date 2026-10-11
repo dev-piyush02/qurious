@@ -1,9 +1,7 @@
-package com.qurious.qurious.service;
+package com.qurious.service;
 
-import com.qurious.qurious.entity.User;
-import com.qurious.qurious.repository.UserRepo;
-import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.qurious.entity.User;
+import com.qurious.repository.UserRepo;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -16,7 +14,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
     UserDetailServiceImpl(UserRepo userRepo) {
         this.userRepo = userRepo;
     }
-
 
     public UserDetails loadUserByUsername(String userId) throws UsernameNotFoundException {
         User user= userRepo.findById(userId).get();

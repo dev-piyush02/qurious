@@ -1,6 +1,6 @@
-package com.qurious.qurious.entity;
+package com.qurious.entity;
 
-import com.qurious.qurious.enums.QuizAttemptStatus;
+import com.qurious.enums.QuizAttemptStatus;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -39,6 +39,7 @@ public class QuizAttempt {
     private QuizRoom quizRoom;
     private Double score;
     private QuizAttemptStatus status;
+    private int seenQuesCnt;
     private Timestamp startedAt;
     private Timestamp submittedAt;
 }

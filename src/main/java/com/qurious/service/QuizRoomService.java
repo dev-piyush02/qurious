@@ -1,17 +1,17 @@
-package com.qurious.qurious.service;
+package com.qurious.service;
 
-import com.qurious.qurious.DTO.QuizRoomDTO;
-import com.qurious.qurious.DTO.QuizRoomReqDTO;
-import com.qurious.qurious.entity.Quiz;
-import com.qurious.qurious.entity.QuizParticipants;
-import com.qurious.qurious.entity.QuizRoom;
-import com.qurious.qurious.entity.User;
-import com.qurious.qurious.mappers.QuizRoomMapper;
-import com.qurious.qurious.repository.ParticipantRepo;
-import com.qurious.qurious.repository.QuizRepo;
-import com.qurious.qurious.repository.QuizRoomRepo;
-import com.qurious.qurious.repository.UserRepo;
-import com.qurious.qurious.utils.QuizRoomCodeGenerator;
+import com.qurious.DTO.QuizRoomDTO;
+import com.qurious.DTO.QuizRoomReqDTO;
+import com.qurious.entity.Quiz;
+import com.qurious.entity.QuizParticipants;
+import com.qurious.entity.QuizRoom;
+import com.qurious.entity.User;
+import com.qurious.mappers.QuizRoomMapper;
+import com.qurious.repository.ParticipantRepo;
+import com.qurious.repository.QuizRepo;
+import com.qurious.repository.QuizRoomRepo;
+import com.qurious.repository.UserRepo;
+import com.qurious.utils.QuizRoomCodeGenerator;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -100,6 +100,7 @@ public class QuizRoomService {
             quizParticipant.setQuizRoom(quizRoom);
             quizParticipant.setParticipant(participant);
             quizParticipant.setJoinedAt(new Timestamp(System.currentTimeMillis()));
+            quizParticipant.setCompleted(false);
             participantRepo.save(quizParticipant);
         }
     }

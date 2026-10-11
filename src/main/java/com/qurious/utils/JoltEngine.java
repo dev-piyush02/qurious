@@ -1,4 +1,4 @@
-package com.qurious.qurious.utils;
+package com.qurious.utils;
 
 import com.bazaarvoice.jolt.Chainr;
 import com.fasterxml.jackson.databind.ObjectMapper;

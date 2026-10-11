@@ -1,4 +1,4 @@
-package com.qurious.qurious.enums;
+package com.qurious.enums;
 
 public enum QuizAttemptStatus {
     STARTED,

@@ -1,23 +1,26 @@
-package com.qurious.qurious.controller;
+package com.qurious.controller;
 
-import com.qurious.qurious.entity.User;
-import com.qurious.qurious.DTO.UserLogin;
-import com.qurious.qurious.service.UserDetailServiceImpl;
-import com.qurious.qurious.service.UserService;
-import com.qurious.qurious.utils.JwtUtil;
+import com.idleauth.auth.AuthFacade;
+import com.idleauth.pojo.AuthResponse;
+import com.idleauth.pojo.VerifiedUser;
+import com.qurious.DTO.QuestionDTO;
+import com.qurious.entity.QuizQuestion;
+import com.qurious.entity.User;
+import com.qurious.DTO.UserLogin;
+import com.qurious.repository.QuestionRepo;
+import com.qurious.service.QuizSessionService;
+import com.qurious.service.UserDetailServiceImpl;
+import com.qurious.service.UserService;
 import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseCookie;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/public")
@@ -26,13 +29,18 @@ public class PublicController {
     private final UserService userService;
     private final AuthenticationManager authenticationManager;
     private final UserDetailServiceImpl userDetailService;
-    private final JwtUtil jwtUtil;
+    private final AuthFacade authFacade;
+    private final QuestionRepo questionRepo;
+    private final QuizSessionService quizSessionService;
 
-    PublicController(UserService userService, AuthenticationManager authenticationManager, UserDetailServiceImpl userDetailService, JwtUtil jwtUtil) {
+    PublicController(UserService userService, AuthenticationManager authenticationManager,
+                     UserDetailServiceImpl userDetailService, AuthFacade authFacade, QuestionRepo questionRepo, QuizSessionService quizSessionService) {
         this.userService = userService;
         this.authenticationManager = authenticationManager;
         this.userDetailService = userDetailService;
-        this.jwtUtil = jwtUtil;
+        this.authFacade = authFacade;
+        this.questionRepo = questionRepo;
+        this.quizSessionService = quizSessionService;
     }
 
     @PostMapping("/add-user")
@@ -49,35 +57,16 @@ public class PublicController {
     public ResponseEntity<?> login(@RequestBody UserLogin userLoginDetail, HttpServletResponse response) throws Exception {
         try {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(userLoginDetail.getUserId(), userLoginDetail.getPassword()));
-            UserDetails userDetails = userDetailService.loadUserByUsername(userLoginDetail.getUserId());
-            String jwtToken = jwtUtil.generateToken(userDetails.getUsername());
-            //generating cookie to be sent with response, valid  for 30 mins
-            ResponseCookie cookie = ResponseCookie.from("access_token", jwtToken)
-                    .httpOnly(true)
-                    .secure(true)
-                    .sameSite("none")
-                    .path("/")
-                    .maxAge(60 * 30)
-                    .build();
-
-            response.addHeader(HttpHeaders.SET_COOKIE, cookie.toString());
+            User user = userService.loadUserById(userLoginDetail.getUserId());
+            VerifiedUser verifiedUser= new VerifiedUser();
+            verifiedUser.setUserId(user.getUserId());
+            List<String> roles= Collections.singletonList(user.getUserRole().toString());
+            verifiedUser.setRoles(roles);
+            AuthResponse authResponse= authFacade.authenticate(verifiedUser, response);
+            System.out.println(authResponse.toString());
             return new ResponseEntity<>("Success", HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>("Failure", HttpStatus.BAD_REQUEST);
         }
-    }
-
-    @PostMapping("/logout")
-    public ResponseEntity<?> logout(HttpServletResponse response) {
-        ResponseCookie cookie = ResponseCookie.from("access_token", "")
-                .httpOnly(true)
-                .secure(true)
-                .sameSite("None")
-                .path("/")
-                .maxAge(0)
-                .build();
-
-        response.addHeader(HttpHeaders.SET_COOKIE, cookie.toString());
-        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

@@ -1,8 +1,8 @@
-package com.qurious.qurious.controller;
+package com.qurious.controller;
 
-import com.qurious.qurious.DTO.UserDTO;
-import com.qurious.qurious.entity.User;
-import com.qurious.qurious.service.UserService;
+import com.qurious.DTO.UserDTO;
+import com.qurious.entity.User;
+import com.qurious.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

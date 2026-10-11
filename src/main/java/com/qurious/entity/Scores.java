@@ -1,4 +1,4 @@
-package com.qurious.qurious.entity;
+package com.qurious.entity;
 
 import jakarta.annotation.Nullable;
 import jakarta.persistence.*;

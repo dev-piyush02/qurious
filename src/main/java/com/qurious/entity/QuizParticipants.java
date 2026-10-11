@@ -1,4 +1,4 @@
-package com.qurious.qurious.entity;
+package com.qurious.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -29,4 +29,5 @@ public class QuizParticipants {
     )
     private QuizRoom quizRoom;
     private Timestamp joinedAt;
+    private boolean isCompleted;
 }

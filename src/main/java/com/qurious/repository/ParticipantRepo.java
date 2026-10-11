@@ -1,7 +1,8 @@
-package com.qurious.qurious.repository;
+package com.qurious.repository;
 
-import com.qurious.qurious.entity.QuizParticipants;
+import com.qurious.entity.QuizParticipants;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ParticipantRepo extends JpaRepository<QuizParticipants,Long> {
+
 }

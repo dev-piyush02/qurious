@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.qurious</groupId>
-	<artifactId>qurious</artifactId>
+	<artifactId>Qurious</artifactId>
 	<version>0.0.1</version>
-	<name>Qurious</name>
+	<name/>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -47,6 +47,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!--WebSocket-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-websocket</artifactId>
+		</dependency>
 		<!--OpenAI-->
 <!--		<dependency>-->
 <!--			<groupId>org.springframework.ai</groupId>-->
@@ -57,22 +62,11 @@
 			<groupId>org.springframework.ai</groupId>
 			<artifactId>spring-ai-starter-model-google-genai</artifactId>
 		</dependency>
-		<!--JWT Token Dependencies-->
+		<!--Authorization and Session-->
 		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt-api</artifactId>
-			<version>0.12.5</version>
-		</dependency>
-		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt-jackson</artifactId>
-			<version>0.12.5</version>
-		</dependency>
-		<dependency>
-			<groupId>io.jsonwebtoken</groupId>
-			<artifactId>jjwt-impl</artifactId>
-			<version>0.12.5</version>
-			<scope>runtime</scope>
+			<groupId>com.idleauth</groupId>
+			<artifactId>idle-auth-starter</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 		<!--DB-->
 		<dependency>

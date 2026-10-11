@@ -1,11 +1,11 @@
-package com.qurious.qurious.service;
+package com.qurious.service;
 
-import com.qurious.qurious.DTO.ResultDTO;
-import com.qurious.qurious.DTO.SubmitAnswerDTO;
-import com.qurious.qurious.entity.*;
-import com.qurious.qurious.enums.QuizAttemptStatus;
-import com.qurious.qurious.repository.*;
-import com.qurious.qurious.utils.CalcDuration;
+import com.qurious.DTO.ResultDTO;
+import com.qurious.DTO.SubmitAnswerDTO;
+import com.qurious.entity.*;
+import com.qurious.enums.QuizAttemptStatus;
+import com.qurious.repository.*;
+import com.qurious.utils.CalcDuration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -47,8 +47,8 @@ public class AnswerSubmissionService {
             answerSubmission.setSelectedAnswer(answerOption.getOptText());
             answerSubmission.setCorrect(answerOption.isCorrect() && answerOption.getQuizQuestion().getQuestionText().equals(quizQuestion.getQuestionText()));
             answerSubmission.setSubmittedAt(new Timestamp(System.currentTimeMillis()));
+            answerSubmission.setQuizId(answer.getQuizId());
             answerSubmissionRepo.save(answerSubmission);
-
             return answerOption.isCorrect();
         }
         return false;
